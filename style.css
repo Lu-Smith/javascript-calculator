@@ -13,3 +13,11 @@ body {
     color: #44565f;
     font-family: "Roboto", sans-serif;
 }
+
+h1 {
+    margin-bottom: 40px;
+}
+
+input, button {
+    padding: 4px 6px;
+}
