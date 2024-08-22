@@ -17,3 +17,12 @@ const resetBtn = document.getElementById("resetBtn").onclick = function(){
     number.textContent = count;
 }
 
+let max = 100;
+let min = 98;
+
+let roundNumber = Math.round((Math.random() * (max - min)) + min);
+
+console.log(roundNumber);
+
+
+
