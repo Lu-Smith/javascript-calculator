@@ -23,24 +23,42 @@ input, button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 300ms ease-in-out;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 button:hover {
     background-color: bisque;
 }
 
-.button-container {
+.counter {
+    background-color: #dfd3c3;
+    padding: 40px;
+    margin: 0 auto;
     margin-bottom: 40px;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.minus, .add {
+    width: 30px;
 }
 
 .minus {
-    background-color: red
+    background-color: rgb(245, 59, 59)
 }
 
 .add {
-    background-color: green;
+    background-color: rgb(29, 142, 29);
 }
 
 .number {
-    font-size: 40px;
+    font-size: 80px;
 }
