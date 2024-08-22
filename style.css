@@ -20,4 +20,27 @@ h1 {
 
 input, button {
     padding: 4px 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 300ms ease-in-out;
+}
+
+button:hover {
+    background-color: bisque;
+}
+
+.button-container {
+    margin-bottom: 40px;
+}
+
+.minus {
+    background-color: red
+}
+
+.add {
+    background-color: green;
+}
+
+.number {
+    font-size: 40px;
 }
