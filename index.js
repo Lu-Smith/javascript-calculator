@@ -87,13 +87,13 @@ enter.onclick = function() {
             answer.textContent = "You are wrong, try a smaller number";
         }
     } else if (Number(playerNumber.value) == guessedRandomNumber) {
+        answer.style.fontSize = "30px";
+        answer.style.color = "green";
         answer.textContent = `You are correct, the number is ${guessedRandomNumber}.`;
         playerNumber.style.display = "none";
         tryAgain.style.display = "block";
         enter.style.display = "none";
     }
-
-    console.log(guessedRandomNumber);
 
     playerNumber.value = "";
     
@@ -104,6 +104,8 @@ tryAgain.onclick = function() {
     enter.style.display = "block";
     answer.textContent = "Guess a number between 0 and 100.";
     tryAgain.style.display = "none";
+    answer.style.fontSize = "16px";
+    answer.style.color = "#596e79";
 }
 
 
