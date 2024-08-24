@@ -47,7 +47,7 @@ button:hover {
     background-color: bisque;
 }
 
-.counter, .random-number {
+.counter, .random-number, .guessing-game {
     background-color: #dfd3c3;
     padding: 40px;
     margin: 0 auto;
