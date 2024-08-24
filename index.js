@@ -67,4 +67,46 @@ resetRanNumBtn.onclick = function(){
 }
 
 
+//This is a guessing game logic
+
+const minNum = 1;
+const maxNum = 100;
+const guessedRandomNumber = Math.floor(Math.random() * maxNum + minNum);
+const answer = document.getElementById("answer");
+const playerNumber = document.getElementById("playerNumber");
+const tryAgain = document.getElementById("tryAgainBtn");
+const enter = document.getElementById("enterBtn");
+
+enter.onclick = function() {
+    if(Number(playerNumber.value) < 0 || Number(playerNumber.value) > 100) {
+        answer.textContent = "Guess a number between 0 and 100.";
+    } else if(Number(playerNumber.value) !== guessedRandomNumber) {
+        if(Number(playerNumber.value) < guessedRandomNumber ) {
+            answer.textContent = "You are wrong, try a higher number";
+        } else {
+            answer.textContent = "You are wrong, try a smaller number";
+        }
+    } else if (Number(playerNumber.value) == guessedRandomNumber) {
+        answer.textContent = `You are correct, the number is ${guessedRandomNumber}.`;
+        playerNumber.style.display = "none";
+        tryAgain.style.display = "block";
+        enter.style.display = "none";
+    }
+
+    console.log(guessedRandomNumber);
+
+    playerNumber.value = "";
+    
+}
+
+tryAgain.onclick = function() {
+    playerNumber.style.display = "block";
+    enter.style.display = "block";
+    answer.textContent = "Guess a number between 0 and 100.";
+    tryAgain.style.display = "none";
+}
+
+
+
+
 
