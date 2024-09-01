@@ -41,12 +41,13 @@
             <button id="tryAgainBtn" style="display:none">Try again</button>
         </div>
     </div>
-    <div id="container">
+    <div id="container" class="dice-roller">
         <h1>Dice Roller</h1>
-        <label for="">number of dice:</label>
+        <label for="">Number of dice:</label>
         <input type="number" value="1" min="1" max="6"/>
         <button onclick="rollDice()">Roll Dice</button>
-        <div></div>
+        <div id="diceResult"></div>
+        <div id="diceImages"></div>
     </div>
 
     <footer>
