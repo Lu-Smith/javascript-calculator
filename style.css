@@ -120,3 +120,24 @@ button:hover {
     font-size: 40px;
     margin: 0 auto;
 }
+
+.results-container {
+    color: red;
+    font-weight: bold;
+}
+
+.images-container {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ gap: 5px;
+ position: relative;
+ top: -20px;
+}
+
+.images-container img {
+    width: 70px;
+    height: 70px;    
+    background-color: red;
+ 
+}
